@@ -37,3 +37,36 @@ List items inside specific card elements
 🔹 Media
 
 All image source (src) URLs
+💻 Code Breakdown
+
+The scraper follows a standard web scraping workflow:
+
+1️⃣ Request
+
+Fetches HTML content from the TutorialsFreak website using requests.get().
+
+2️⃣ Parse
+
+Converts raw HTML into a searchable BeautifulSoup object.
+
+3️⃣ Navigate
+
+Accesses specific sections like:
+
+<head>
+
+<body>
+
+4️⃣ Filter
+
+Uses find() and find_all() to locate:
+
+Tags (p, a, h1, img)
+
+Specific classes (e.g., .card-haed)
+
+5️⃣ Clean & Extract
+
+.text → human-readable content
+
+.get("href"), .get("src") → attribute values
