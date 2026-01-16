@@ -1,5 +1,4 @@
 TutorialsFreak Web Scraper
-
 A Python-based web scraping utility that extracts structured data from the TutorialsFreak homepage.
 This project demonstrates how to fetch web content, parse HTML, navigate the DOM, and extract useful data such as links, images, and course information.
 
